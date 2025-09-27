@@ -6,19 +6,25 @@
 @source '../**/*.js';
 @custom-variant dark (&:where(.dark, .dark *));
 
-
-
-
 @theme {
     --font-sans: Inter, sans-serif;
     --font-clicker: "Clicker Script", cursive;
     --font-playfair: "Playfair Display", serif;
+
+    --color-coffee-dark: #3E2723;
+    --color-coffee-cream: #F5EBDC;
+
 }
 
-.hero-bg {
+@utility hero-bg {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url('https://images.unsplash.com/photo-1447933601403-0c6688de566e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2061&q=80');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
+
+[data-flux-navbar-items] [data-content] {
+    @apply !text-lg !font-normal;
+}
+
