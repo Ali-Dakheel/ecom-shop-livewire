@@ -14,6 +14,7 @@
 <body>
 <main class="w-full">
     <livewire:navigation></livewire:navigation>
+    <x-discover/>
 {{ $slot }}
 </main>
 @fluxScripts

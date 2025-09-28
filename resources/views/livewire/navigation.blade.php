@@ -1,4 +1,3 @@
-<!-- Updated header section with improved buttons -->
 <div class="min-h-screen">
     <!-- Header -->
     <flux:header class="absolute top-0 left-0 right-0 z-50 px-6 lg:px-8 py-4 bg-transparent">
